@@ -1,92 +1,15 @@
 * {
     box-sizing: border-box;
+    /* font family */
     font-family: 'Quicksand', sans-serif;
 }
 
 body {
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
+    margin: 0;
 }
 
-
-/* Header/Blog Title */
-
-.header {
-    padding: 30px;
-    text-align: center;
-    background: white;
-}
-
-.header h1 {
-    font-size: 50px;
-}
-
-
-/* Style the top navigation bar */
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
-
-
-/* Style the topnav links */
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-/* Change color on hover */
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-/* Create two unequal columns that floats next to each other */
-
-
-/* Left column */
-
-.leftcolumn {
-    float: left;
-    width: 75%;
-}
-
-
-/* Right column */
-
-.rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-}
-
-
-/* Fake image */
-
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
-
-/* Add a card effect for articles */
-
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -99,32 +22,222 @@ body {
 }
 
 
-/* Footer */
+/*Estilos de la barra de navegacion*/
 
-.footer {
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 2vw;
+    padding: 0 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*Encabezado*/
+
+.header {
+    background-image: url("../img/section-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 20px;
     text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 10vw;
+    color: black;
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* Clases de Columns*/
 
-@media screen and (max-width: 800px) {
-    .leftcolumn,
-    .rightcolumn {
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 10%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column p {
+    font-size: 1vw;
+    padding: 3%;
+    text-align: justify;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 2vw;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.three-coolumn {
+    float: left;
+    width: 33.3%;
+    padding: 10%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+
+/*clase de padding*/
+
+.padding {
+    padding: 3% 20% 10% 20%;
+}
+
+.padding-0 {
+    padding: 0%;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+
+/*Secciones*/
+
+#section-1 {
+    /*filter: invert(0.7);*/
+}
+
+#section-1 img {
+    padding-top: 20%;
+}
+
+#seccion-3 {
+    padding-top: 20px;
+}
+
+#seccion-5 {
+    text-align: center;
+    font-size: 3vw;
+    background-color: yellow;
+}
+
+#seccion-5 p {
+    color: white;
+}
+
+
+/*Tabla*/
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: turquoise;
+    color: white;
+}
+
+
+/*Footer*/
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .two-column,
+    .three-column {
         width: 100%;
-        padding: 0;
     }
-}
-
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 400px) {
-    .topnav a {
+    .four-column {
+        width: 50%;
+    }
+    li {
         float: none;
-        width: 100%;
+        display: inline-block;
+        width: 50%;
+    }
+    li a {
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+    ul {
+        padding: 0%;
+        overflow: auto;
+        white-space: nowrap;
     }
 }

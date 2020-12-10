@@ -7,68 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/icono.png" />
 </head>
 
 <body>
+    <script src="JS/codigo.js"></script>
 
-    <div class="header">
-        <h1>My Website</h1>
-        <p>Resize the browser window to see the effect.</p>
-    </div>
+    <body>
+        <!--Barra de navegacion-->
+        <ul id="nav">
+            <li><a href="#header">Welcome</a></li>
+            <li><a href="#section-1">¿Que es?</a></li>
+            <li><a href="#section-2">Mapa</a></li>
+            <li><a href="#section-3">servicios</a></li>
+        </ul>
 
-    <div class="topnav">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#" style="float:right">Link</a>
-    </div>
-
-    <div class="row">
-        <div class="leftcolumn">
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="header" id="header">
+            <h1>Media Maratón de Barcelona</h1>
+        </div>
+        <!-- seccion 1 -->
+        <div class="row" id="section-1">
+            <div class="two-column">
+                <h1>¿Que es la medio maratón de Barcelona?</h1>
+                <p>El medio maratón de Barcelona le ofrece la oportunidad de correr por las calles de la ciudad. Es un evento al cual corredores de todo el mundo vienen a la ciudad para participar. Si eres un corredor con experiencia o esta es tu primera
+                    media maratón, este es un evento que disfrutarás y te sentirás orgulloso de haber participado en ella.
+                </p>
             </div>
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <div class="two-column">
+                <img src="img/Mitja-Marató-Barcelona-03.jpg" alt="">
             </div>
         </div>
-        <div class="rightcolumn">
-            <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <!--Seccion 2-->
+        <div class="row padding-30" id="section-2">
+
+            <div class="two-column">
+                <img src="img/descarga (2).jpg" alt="">
             </div>
-            <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
+            <div class="two-column">
+                <h1>Mapa</h1>
+                <p>En este mapa estan marcado la ruta y la hora de inicio de la maratón</p>
             </div>
         </div>
-    </div>
+        <!--seccion 3-->
+        <div class="row padding" id="section-3">
+            <div id="seccion-3">
+                <h1>Guía del corredor</h1>
+                <p>Cada paso cuenta eso hemos preparado avituallamientos cada 5KM que te harán falta.</p>
+            </div>
+            <table class="padding-30" id="customers">
+                <tr>
+                    <th>KM AVITULALLAMIENTO</th>
+                    <th>AGUA VILADRAU</th>
+                    <th>ISOTONICO POWERADE</th>
+                    <TH>WC</TH>
+                    <TH>SERVICIOS MEDICOS</TH>
+                    <TH>FRUTA</TH>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <TD>21</TD>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row" id="seccion-5">
+            <div class="one-column">
+                <h1>Video de Resumen del año 2019</h1>
+                <div class="one-column">
+                    <iframe width="971" height="546" src="https://www.youtube.com/embed/H0WpQ_v--lI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
 
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
-
+        <!--Footer-->
+        <div class="row" id="footer">
+            <div class="two-column">
+                <p>@Minds of tomorrow, LLC 2020</p>
+            </div>
+            <div class="four-column">
+                <p>Facebook</p>
+                <p>Instagram</p>
+            </div>
+            <div class="four-column">
+                <p>Our Programs</p>
+                <p>The Studio</p>
+            </div>
+        </div>
+    </body>
 </body>
 
 </html>
