@@ -167,7 +167,9 @@ li a:hover {
     color: white;
 }
 
-#section-6 {}
+#section-6 {
+    padding: 0%;
+}
 
 
 /*Tabla*/
