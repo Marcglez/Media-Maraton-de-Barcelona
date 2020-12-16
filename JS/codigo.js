@@ -5,7 +5,7 @@ window.onscroll = function() {
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("nav").style.backgroundColor = "rgba(255,255,25¡,0.0)";
+        document.getElementById("nav").style.backgroundColor = "rgba(255,255,255,0.0)";
         document.getElementById("nav").style.backdropFilter = "blur(4px)";
         //document.getElementById("nav").style.backdropFilter = "sepia(0.9)";
 

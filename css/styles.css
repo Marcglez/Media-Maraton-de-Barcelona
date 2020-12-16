@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     /* font family */
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
 body {
@@ -28,7 +28,7 @@ ul {
     list-style-type: none;
     margin: 0;
     font-size: 2vw;
-    padding: 0 15%;
+    padding: 0%;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -38,7 +38,7 @@ ul {
 
 li {
     float: left;
-    width: 25%;
+    width: 16.6%;
 }
 
 li a {
@@ -77,11 +77,15 @@ li a:hover {
 .one-column {
     float: left;
     width: 100%;
-    padding: 10%;
+    padding: 2%;
 }
 
 .one-column h1 {
-    font-size: 5vw;
+    font-size: 8vw;
+}
+
+.one-column p {
+    font-size: 4vw;
 }
 
 .two-column {
@@ -108,12 +112,6 @@ li a:hover {
     width: 100%;
 }
 
-.three-coolumn {
-    float: left;
-    width: 33.3%;
-    padding: 10%;
-}
-
 .four-column {
     float: left;
     width: 25%;
@@ -131,16 +129,13 @@ li a:hover {
 
 /*clase de padding*/
 
-.padding {
-    padding: 3% 20% 10% 20%;
-}
-
 .padding-0 {
     padding: 0%;
 }
 
 .padding-30 {
-    padding: 30px;
+    padding: 90px;
+    font-size: 3vw;
 }
 
 
@@ -152,6 +147,10 @@ li a:hover {
 
 #section-1 img {
     padding-top: 20%;
+}
+
+#section-2 {
+    background-color: rgb(202, 202, 202);
 }
 
 #seccion-3 {
@@ -167,6 +166,8 @@ li a:hover {
 #seccion-5 p {
     color: white;
 }
+
+#section-6 {}
 
 
 /*Tabla*/
@@ -200,6 +201,45 @@ li a:hover {
 }
 
 
+/*Cuenta regresiva*/
+
+#cuenta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.simply-section {
+    background: burlywood;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simply-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+
+/*Maps*/
+
+.maps {
+    width: 100%;
+    padding: 2%;
+}
+
+
 /*Footer*/
 
 #footer {
@@ -213,11 +253,37 @@ li a:hover {
 }
 
 
+/*Discord*/
+
+#discord {
+    text-align: center;
+}
+
+
+/*redes sociales*/
+
+.redes-sociales .btn-red-social {
+    padding: 15px 0;
+    display: inline-block;
+    min-width: 120px;
+    border-radius: 5px;
+    background: #0054a5;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+#redes-sociales {
+    font-size: 6vw;
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:700px) {
-    .two-column,
-    .three-column {
+    .two-column {
         width: 100%;
     }
     .four-column {

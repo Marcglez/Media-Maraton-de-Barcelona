@@ -5,7 +5,8 @@
     <title>Media Maraton de Barcelona</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="shortcut icon" href="img/icono.png" />
 </head>
@@ -20,6 +21,8 @@
             <li><a href="#section-1">¿Que es?</a></li>
             <li><a href="#section-2">Mapa</a></li>
             <li><a href="#section-3">servicios</a></li>
+            <li><a href="#seccion-5">Resumen 2019</a></li>
+            <li><a href="#section-6">Download Infografia</a></li>
         </ul>
 
         <div class="header" id="header">
@@ -28,7 +31,7 @@
         <!-- seccion 1 -->
         <div class="row" id="section-1">
             <div class="two-column">
-                <h1>¿Que es la medio maratón de Barcelona?</h1>
+                <h1>¿Que es la Media maratón de Barcelona?</h1>
                 <p>El medio maratón de Barcelona le ofrece la oportunidad de correr por las calles de la ciudad. Es un evento al cual corredores de todo el mundo vienen a la ciudad para participar. Si eres un corredor con experiencia o esta es tu primera
                     media maratón, este es un evento que disfrutarás y te sentirás orgulloso de haber participado en ella.
                 </p>
@@ -37,19 +40,27 @@
                 <img src="img/Mitja-Marató-Barcelona-03.jpg" alt="">
             </div>
         </div>
+
+        <div id="cuenta"></div>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <script src="js/simplyCountdown.min.js"></script>
+        <script src="js/countdown.js"></script>
         <!--Seccion 2-->
         <div class="row padding-30" id="section-2">
-
-            <div class="two-column">
-                <img src="img/descarga (2).jpg" alt="">
-            </div>
-            <div class="two-column">
+            <div class="one-column">
                 <h1>Mapa</h1>
                 <p>En este mapa estan marcado la ruta y la hora de inicio de la maratón</p>
             </div>
+            <div class="two-column">
+                <img src="img/descarga (2).jpg" alt="">
+            </div>
+            <br>
+            <div class="two-column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.275946832703!2d2.181947815409089!3d41.38981327926391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a302afe2cbf7%3A0xb8ec6f7efe214a69!2sInformaticacasa!5e0!3m2!1ses!2ses!4v1608119178054!5m2!1ses!2ses"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
         </div>
         <!--seccion 3-->
-        <div class="row padding" id="section-3">
+        <div class="row padding-30" id="section-3">
             <div id="seccion-3">
                 <h1>Guía del corredor</h1>
                 <p>Cada paso cuenta eso hemos preparado avituallamientos cada 5KM que te harán falta.</p>
@@ -106,18 +117,26 @@
             </div>
         </div>
 
+        <div class="row" id="section-6">
+            <div class="one-column">
+                <h1>Link de descarga de la biografia</h1>
+                <a href="/images/myw3schoolsimage.jpg" download>
+                    <img src="img/boton.png" alt="¡Aqui no hay nada que ver!">
+                </a>
+            </div>
+
+        </div>
+
         <!--Footer-->
         <div class="row" id="footer">
-            <div class="two-column">
-                <p>@Minds of tomorrow, LLC 2020</p>
+            <div class="two-column redes-sociales">
+                <p id="redes-sociales">Redes sociales</p>
+                <a href="https://www.facebook.com" class="btn-red-social"><i class="fab fa-facebook-f"></i></a><br><br>
+                <a href="https://twitter.com/Markglez295" class="btn-red-social"><i class="fab fa-twitter"></i></a><br><br>
+                <a href="https://www.instagram.com/_markglez/" class="btn-red-social"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="four-column">
-                <p>Facebook</p>
-                <p>Instagram</p>
-            </div>
-            <div class="four-column">
-                <p>Our Programs</p>
-                <p>The Studio</p>
+            <div class="two-column" id="discord">
+                <iframe src="https://discord.com/widget?id=788724151426744362&theme=dark" width="350px" height="500px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
         </div>
     </body>
