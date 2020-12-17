@@ -269,7 +269,7 @@ div.scrollmenu a:hover {
 /*Discord*/
 
 .two-column iframe {
-    width: 70%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -338,5 +338,11 @@ div.scrollmenu a:hover {
         justify-content: center;
         margin-bottom: 100px;
         width: 100%;
+    }
+    .two-column p {
+        font-size: 4vw;
+    }
+    .one-column h1 {
+        font-size: 8vw;
     }
 }
