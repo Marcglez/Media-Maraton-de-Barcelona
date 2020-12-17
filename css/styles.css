@@ -156,10 +156,6 @@ div.scrollmenu a:hover {
 
 /*Secciones*/
 
-#section-1 {
-    /*filter: invert(0.7);*/
-}
-
 #section-1 img {
     padding-top: 20%;
 }
@@ -272,8 +268,11 @@ div.scrollmenu a:hover {
 
 /*Discord*/
 
-#discord {
-    text-align: center;
+.two-column iframe {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -312,9 +311,10 @@ div.scrollmenu a:hover {
         width: 100%;
     }
     li {
-        float: none;
         display: inline-block;
-        width: 10%;
+        width: 40%;
+        text-align: center;
+        float: none;
     }
     li a {
         font-size: 14px;
@@ -324,18 +324,9 @@ div.scrollmenu a:hover {
         text-decoration: none;
     }
     ul {
-        padding: 0%;
-        overflow: scroll;
-        white-space: nowrap;
-        width: 100%;
-    }
-    div.scrollmenu {
-        background-color: #333;
+        padding: 0;
         overflow: auto;
         white-space: nowrap;
-    }
-    #cuenta {
-        width: 100%;
     }
     .table {
         float: left;
@@ -343,7 +334,7 @@ div.scrollmenu a:hover {
         padding: 0%;
     }
     #cuenta {
-        display: flex;
+        display: none;
         justify-content: center;
         margin-bottom: 100px;
         width: 100%;
